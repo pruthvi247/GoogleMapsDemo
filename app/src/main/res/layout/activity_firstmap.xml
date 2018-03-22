@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FirstMap"
+        tools:context=".FirstMapActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+    map:cameraZoom="13"
+    map:mapType="normal"
+    map:liteMode="true"
+       />
+    <!--map:cameraZoom="13"-->
+    <!--map:mapType="normal"-->
+    <!--map:liteMode="true"-->
+
+    <RelativeLayout
+        android:id="@+id/seachBarId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_border"
+        android:elevation="10dp">
+
+
+        <ImageView
+            android:id="@+id/searchButtonId"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search_button" />
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/searchButtonId"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/inputSearchText"
+            android:background="@null"
+            android:hint="Enter Address,City or Zipcode"
+            android:imeOptions="actionSearch"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/seachBarId"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ic_gps"
+        android:src="@drawable/ic_gps"/>
+
+</RelativeLayout>
+

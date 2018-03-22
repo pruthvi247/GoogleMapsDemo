@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.bigbang.googlemapsdemo.MainActivity">
+
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here for your location " />
+
+    <Button
+        android:id="@+id/geoPointButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click here for geo points"
+        app:layout_constraintTop_toBottomOf="@+id/mapButton"/>
+        <!--tools:layout_editor_absoluteX="38dp"-->
+        <!--tools:layout_editor_absoluteY="138dp"-->
+    <Button
+        android:id="@+id/profleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click here for profile"
+        app:layout_constraintTop_toBottomOf="@+id/geoPointButton"/>
+
+
+</android.support.constraint.ConstraintLayout>

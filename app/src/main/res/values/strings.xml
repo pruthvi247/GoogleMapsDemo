@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GoogleMapsDemo</string>
+    <string name="FACEBOOK_APP_ID">891795047665736</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">c53215bd28727bf706cc10538351b48c</string>
+    <string name="ak_login_protocol_scheme">ak891795047665736</string>
+</resources>
